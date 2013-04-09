@@ -1,0 +1,20 @@
+<table>
+	<tr>
+		<th>Title</th>
+		<th>Year</th>
+		<th>Plot</th>
+    </tr>
+
+	<% @movies.each do |m| %>
+	    <tr>
+  		  <td>
+  		  	<a href=/movies/<%= m['imdbID'] %>>
+  		  		<%= m['Title'] %>
+  		  	</a>
+  		  </td>
+ 		  <td><%= m['Year'] %> </td>
+		  <td><%= m['Plot'] %> </td>
+		</tr>
+	<% end %>
+
+</table>

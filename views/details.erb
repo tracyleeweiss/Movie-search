@@ -1,0 +1,20 @@
+<!-- 
+	<% @movie.keys.each do |k| %>
+		<th><%= k %> </th>
+    <% end %>
+ -->
+ 	
+ 	<div>
+	    <img src="<%= @movie['Poster'] %>">
+    </div>
+
+<table>
+
+
+	<% @movie.each do |k, v| %>
+	    <tr>
+			<td><%= k %> </td>
+			<td><%= v %> </td>
+		</tr>
+    <% end %>			
+</table>
